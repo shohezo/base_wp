@@ -1,0 +1,77 @@
+@charset "UTF-8";
+// base
+html {
+  font-size: 62.5%;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* 変数 */
+:root {
+  --f1: 2.44em; /* 39.04px */
+  --f2: 1.95em; /* 31.2px */
+  --f3: 1.56em; /* 24.96px */
+  --f4: 1.25em; /* 20px */
+  --f5: 1em; /* 16px */
+  --f6: 0.8em; /* 12.8px*/
+}
+
+/* フォント */
+body {
+  font-family: sans-serif;
+}
+p {
+  line-height: 1.8;
+  font-size: var(--f5);
+}
+h1 {
+  font-size: var(--f1);
+}
+h2 {
+  font-size: var(--f2);
+}
+h3 {
+  font-size: var(--f3);
+}
+h4 {
+  font-size: var(--f4);
+}
+h5 {
+  font-size: var(--f5);
+}
+h6 {
+  font-size: var(--f6);
+}
+
+/* color変数 */
+
+/* フロント記事の横幅 */
+
+body {
+  //初期設定の余白を無効化
+  margin: 0;
+}
+.mycontainer {
+  //左右の余白サイズの指定
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+/* リンク */
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media screen and(min-width:740px) {
+  //横幅の最大値の指定
+  .mycontainer {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
